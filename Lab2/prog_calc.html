@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <link rel="shortcut icon" href="images/calculator.ico" type="image/x-icon">
+    <script type="text/javascript">
+        //function that display value
+        function dis(val)
+        {
+            document.getElementById("result").value+=val
+        }
+          
+        //function that evaluates the digit and return result
+        function solve() 
+        {
+            let x = document.getElementById("result").value
+            let y = eval(x)
+            document.getElementById("result").value = y
+        
+        }
+
+        //function that clear the display
+        function clr()
+        {
+            document.getElementById("result").value = ""
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Calculato/For programmer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <meta name="theme-color" content="#7952b3">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+
+  </head>
+  <body>
+        
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Calculator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Calculator</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                    <li><a class="dropdown-item" href="index.html">Normal</a></li>
+                    <li><a class="dropdown-item" href="prog_calc.html">For programmer</a></li>
+                </ul>
+                </li> 
+            </ul>
+            <ul class="navbar-nav mr-sm-2"> 
+                <li class="nav-item active" justify-content="end">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+        <div class="w-100 mt-5 d-flex justify-content-around flex-wrap">
+            <div class="calculatorForProg">
+                <output></output>
+            </div>
+        </div>
+        <script src="js/viewForProg.js"></script>
+        <script src="js/controllerForProg.js"></script>
+        <script src="js/modelForProg.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+      
+  </body>
+</html>
