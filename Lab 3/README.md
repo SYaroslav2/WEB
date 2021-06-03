@@ -1,0 +1,1 @@
+Савицький Ярослав Вікторович, КВ-84, Розробка Web-додатка засобами Javascript/VueJS(калькулятор),загальне завдання: адаптувати програмний код ЛР№2 до вимог фреймворка VueJS та забезпечити завантаження необхідних даних з Web-сервера, https://docs.google.com/document/d/1-25CsxwrsoCrQJHVqZuh6YKTa7cMbL9jqG6O8Nm73b0/edit?usp=sharing
